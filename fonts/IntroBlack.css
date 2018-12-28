@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'IntroBlack';
-    src: url('fonts/IntroBlack.eot');
-    src: url('fonts/IntroBlack.eot') format('embedded-opentype'),
-         url('fonts/IntroBlack.woff2') format('woff2'),
-         url('fonts/IntroBlack.woff') format('woff'),
-         url('fonts/IntroBlack.ttf') format('truetype'),
-         url('fonts/IntroBlack.svg#IntroBlack') format('svg');
-}

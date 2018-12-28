@@ -1,0 +1,43 @@
+section#main
+	.container
+		include header
+		.pre Бесплатный интенсив
+		h1.main_title Звездные врата
+		h2.man_subtitle Всего за 2 дня откройте доступ 
+			span к взаимодействию и работе со Звездными Семьями
+		.aut_n_date.main_aut_n_date
+			p.aut_n_date_text Автор:
+				span Ольга Ревковская
+			p.aut_n_date_text Даты проведения:
+				span с 23 января по 24 января, 19:00 мск
+		.video_wrapper.main_video_wrapper
+			iframe(src="https://youtube.com/embed/?rel=0&autoplay=0" allowfullscreen)
+section#mail_section
+	.container
+		.mail_section_titles
+			h3.mail_section_title Запишитесь прямо сейчас
+				span и получите видео-бонус
+			h4.mail_section_subtitle Очищение и перезапись подсознания
+		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form_newsletter.form_newsletter_mail_section
+			.email-block
+				input( type="hidden" value="1" name="required_fields[email]")
+				input(class="mail" name="Contact[email]" type="text" placeholder="Ваш email")
+			button(type="submit").button.button_mail Записаться
+			.clearfix
+			p.alert_message
+			<!--Обязательный параметр. Не удалять и не изменять!-->
+			input(type="hidden" value="548" name="Contact[id_newsletter]")
+			<!--API код канала рекламы-->
+			input(type="hidden" value="Ревковская Звездные врата" name="Contact[id_advertising_channel_page]")
+			.checking
+				input(type="checkbox" id="check" checked).check
+				label(for="check").check_label Я согласен с 
+					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
+					|  по 152 - Ф3
+		.aut_n_date.sub_aut_n_date
+			p.aut_n_date_text Автор:
+				span Ольга Ревковская
+			p.aut_n_date_text Даты проведения:
+				span с 23 января
+				span по 24 января,
+				span 19:00 мск

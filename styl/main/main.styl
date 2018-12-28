@@ -1,0 +1,266 @@
+#main
+	width 100%
+	background-color: #369ECB
+	background-image url(../img/olga_main.png), url(../img/main_bg.jpg)
+	background-repeat no-repeat, no-repeat
+	background-position:  700px 0 , center
+	background-size: contain, cover
+	box-shadow: 0 0 65px 12px rgba(247,246,245,0.17) inset
+	.container
+		position relative
+		z-index: 9
+#olga_main
+	position: absolute
+	top 0
+	right -430px
+#header
+	position relative
+	z-index: 11
+	padding 14px 0
+	margin-bottom: 52px
+#logo
+	width 260px
+	margin-top: 12px
+.contacts
+	float: right
+	text-align: right
+	display: table
+.contact_cell
+	display: table-cell
+	vertical-align: middle
+	a
+		display block
+		font-size: 16px;
+		font-family: "Ubuntu";
+		color: rgb(255, 255, 255);
+		line-height: 22px;
+		letter-spacing: 1.1px;
+		&:focus
+			color: rgb(255, 255, 255);
+			text-decoration: none
+		&:hover
+			color: rgb(255, 255, 255);
+			text-decoration: underline
+.contact_cell_no_tels
+	padding-left: 36px
+.contact_cell_tels
+	padding-left: 58px
+	background-image url(../img/tel_icon.png)
+	background-repeat no-repeat
+	background-position: 1px center
+	padding-right: 40px
+.contact_cell_no_tels
+	background-image url(../img/mail_icon.png), url(../img/skype_icon.png)
+	background-repeat no-repeat, no-repeat
+	background-position: 1px top, 27px bottom
+.pre
+	font-size: 24px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+.main_title
+	font-size: 42px;
+	font-family: "Intro", sans-serif;
+	color: rgb(181, 226, 251);
+	line-height: 1.2;
+	margin 5px 0
+.man_subtitle
+	font-size: 22px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 233, 46);
+	line-height: 1.2;
+	text-shadow: 0px 4px 22.32px rgba(1, 51, 76, 0.29);
+	span
+		display block
+		font-size: 20px
+		color rgb(255,255,255)
+.aut_n_date
+	position: absolute
+	border-radius: 50%
+	border 2px solid rgb(255, 255, 255);
+	background-color: rgb(1, 71, 107);
+	box-shadow: 0px 12px 15.66px 2.34px rgba(0, 0, 0, 0.35);
+	width: 214px;
+	height: 214px;
+	padding 27px 11px 34px
+	text-align: center
+.aut_n_date_text
+	font-size: 20px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(253, 165, 33);
+	line-height: 1.35;
+	&:first-child
+		margin-bottom: 8px
+	span
+		display block
+		font-size: 18px;
+		font-family: "Ubuntu";
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+.main_aut_n_date
+	display: none
+.main_video_wrapper
+	margin 30px 0 20px 0
+	max-width 431px
+.sub_aut_n_date
+	top: -182px
+	right 36px
+#mail_section
+	width 100%
+	padding 22px 0 17px
+	background-color: rgb(2, 129, 187);
+	.container
+		position relative
+.mail_section_titles
+	float: left
+	margin-right: 57px
+	width 100%
+	max-width 309px
+.mail_section_title
+	font-size: 22px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 233, 46);
+	line-height: 1.2;
+	margin-bottom: 5px
+	span
+		display block
+		font-size: 20px;
+		font-family: "Ubuntu";
+		color: rgb(255, 255, 255);
+.mail_section_subtitle
+	font-size: 20px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	position relative
+	padding-left: 20px
+	&:before
+		content ''
+		display block
+		width: 10px
+		height 10px
+		background-color: rgb(255,154,0)
+		border-radius: 50px
+		position: absolute
+		top 8px
+		left 0
+.form_newsletter_mail_section
+	width 100%
+	max-width 426px
+	float left
+	overflow hidden
+	margin-top: 11px
+.mail
+	border 2px solid rgb(255, 255, 255);
+	border-radius: 5px;
+	background-color: rgb(2, 129, 188);
+	width: 229px;
+	height: 50px;
+	line-height: 46px;
+	background-color: transparent
+	text-indent: 10px
+	font-size: 14px;
+	font-family: "UbuntuLight", sans-serif;
+	color: rgb(255, 255, 255);
+	margin-right: 23px
+	float left
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	font-family: 'UbuntuBold', sans-serif;
+	color: #000
+}
+.checking {
+	display: table;
+	width 100%
+	margin: 13px auto 0;
+	text-align: left;
+	height 18px
+}
+
+.checking .check_label {
+	font-size: 11px;
+	font-family: "UbuntuLight", sans-serif;
+	color: rgba(#fff, 1)
+	line-height: 1.2;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 26px;
+	text-align: left
+}
+
+.checking .check_label a {
+	color: rgba(#fff, 1)
+	text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 18px;
+	height: 18px;
+	border none
+	border-radius: 50px
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	left: 2px;
+	top: -10px;
+	width: 16px;
+	height: 22px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid rgb(255,154,0)
+	border-right: 3px solid rgb(255,154,0)
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + label:before {
+	background-color: #fff;
+
+}
+
+.check:checked + label:after {
+	opacity: 1;
+	top: -11px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(255,255,255,1);
+		background: transparent;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
