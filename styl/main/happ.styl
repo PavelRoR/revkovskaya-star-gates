@@ -1,0 +1,69 @@
+#happens
+	width 100%
+	padding 90px 0 112px
+	background-color: rgb(16,134,189)
+	background-image url(../img/happens_bg.jpg)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+.happens_container
+	border-radius: 6px;
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: 0px 6px 7.44px 0.56px rgba(3, 91, 132, 0.29);
+	width 100%
+	max-width 960px
+	margin 0 auto
+	position relative
+	padding: 54px 35px 60px 62px
+.happens_title
+	text-align: center
+	font-size: 30px;
+	font-family: "Ubuntu";
+	color: rgb(20, 61, 80);
+	line-height: 1.2;
+	margin-bottom: 20px
+.happens_list
+	list-style none
+	counter-reset: my-counter;
+	margin-bottom: 21px
+	li
+		counter-increment: my-counter;
+		font-family: "UbuntuLight", sans-serif;
+		color: rgb(36, 36, 36);
+		line-height: 1.222;
+		margin-bottom: 16px
+		letter-spacing: 0.4px;
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: counter(my-counter)
+			border-radius: 50%;
+			background-color: rgb(2, 129, 188);
+			box-shadow: 0px 2px 7.6px 0.4px rgba(0, 0, 0, 0.15)
+			display inline-block
+			margin-right: 10px
+			width: 28px;
+			height: 28px;
+			line-height: 28px;
+			font-size: 20px;
+			font-family: "IntroBoldAlt", sans-serif;
+			color: rgb(254, 153, 0);
+			text-align: center
+.happens_aftertitle
+	text-align: center
+	width 100%
+	max-width 740px
+	margin 0 auto
+	font-size: 22px;
+	font-family: "UbuntuBold",sans-serif;
+	line-height: 1.182;
+	color #0281bc
+	letter-spacing: 0.4px;
+	span
+		color: rgb(232, 140, 0);
+.button_happens
+	position: absolute
+	margin 0 auto
+	left 0
+	right 0
+	bottom: -20px
