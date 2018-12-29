@@ -1,0 +1,59 @@
+#plan
+	width 100%
+	padding 80px 0 90px
+.plan_title
+	font-size: 30px;
+	font-family: "Ubuntu";
+	color: rgb(20, 61, 80);
+	line-height: 1.2;
+	text-align: center;
+	margin-bottom: 43px
+.plan_row
+	width 100%
+	max-width 1030px
+	margin 0 auto
+.plan_day
+	width 100%
+	max-width 440px
+	margin 0 auto
+	background-color: rgb(1, 71, 107);
+	box-shadow: 0px 10px 21.84px 2.16px rgba(0, 0, 0, 0.2);
+	padding 18px 6px
+	min-height 360px
+	border-radius: 5px
+.plan_day_title
+	text-align: center
+	margin-bottom: 22px
+	font-size: 24px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 233, 46);
+	line-height: 1.2;
+	text-shadow: 0px 6px 8.46px rgba(0, 0, 0, 0.26);
+	position relative
+	&:before
+	&:after
+		content ''
+		display: block
+		border-radius: 50%;
+		background-color: rgb(255, 255, 255);
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		top 12px
+	&:before
+		left calc(50% - 60px)
+	&:after
+		right calc(50% - 60px)
+.plan_day_list
+	li
+		list-style none
+		padding: 3px 30px 0 36px
+		margin-bottom: 15px
+		font-family: "Ubuntu";
+		color: rgb(254, 254, 254);
+		line-height: 1.2;
+		background-image url(../img/romb.png)
+		background-repeat no-repeat
+		background-position 0 0
+.button_plan
+	margin-top: 55px
