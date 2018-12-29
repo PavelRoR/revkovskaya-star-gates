@@ -6,11 +6,13 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(property="og:title" content="Бонус")
 		meta(property="og:description" content="От Ольги Ревковской")
-		meta(property="og:image" content="https://revkovskaya.mastervision.su/star-gates/img/banner.jpg")
 		title Бонус от Ольги Ревковской
 		link(rel="icon" type="image/x-icon" href="../favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
 		link(rel="stylesheet" href="../css/bonus_styles.css")
+		script(src="//vk.com/js/api/openapi.js?153")
+		script
+			| VK.init({apiId: 6314801,onlyWidgets: true});
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 		noscript
@@ -19,7 +21,7 @@ html(lang="ru")
 		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-130434463-1")
 		script
 			| window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-130434463-1');
-	body
+	body#bonus
 		<!-- Yandex.Metrika counter -->
 		script(type="text/javascript")
 			| (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35450015 = new Ya.Metrika({ id:35450015, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
@@ -27,7 +29,60 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		h1 В разработке...
+		div#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+		section#main
+			.container
+				header#header
+					a(href="https://mastervision.su", target="_blank")
+						img#logo(src="../img/logo.png", alt="Логотип")
+					.contacts
+						.contact_cell.contact_cell_tels
+							a.tel(href="callto:8-929-568-87-50") 8-929-568-87-50
+							a.tel(href="callto:8-499-346-79-46") 8-499-346-79-46
+						.contact_cell.contact_cell_no_tels
+							a.email(href="mailto:info@mastervision.su") info@mastervision.su
+							a.skype(href="skype:add?admin-mastervision") admin-mastervision
+				.pre Бонус 
+				h1.main_title от Ольги Ревковской
+				.aut_n_date.main_aut_n_date
+					p.aut_n_date_text Старт интенсива:
+						span 25 января, в 19:00 мск
+				.video_wrapper.main_video_wrapper
+					iframe(src="https://youtube.com/embed/-8nAI0-t_qo?rel=0&autoplay=0" allowfullscreen)
+		section#feedback
+			.container
+				h3.feedback_title Вашы вопросы к Ольге пишите 
+					span в формах ниже:
+				.row
+					.col-md-6.col-sm-6
+						#vk
+							#vk_comments
+							script(type="text/javascript")
+								| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+					.col-md-6.col-sm-6
+						#fb
+							.fb-comments(data-href="https://revkovskaya.mastervision.su/star-gates/bonus/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
+		footer#footer
+			.container
+				.soc_buttons
+					h5 Хотите узнать больше? Вступайте в наши группы!
+					a(href="https://www.facebook.com/Mastervision1C/" target="_blank")
+						i(class="fa fa-facebook" aria-hidden="true")
+					a(href="http://vk.com/mv_ezoterika" target="_blank")
+						i(class="fa fa-vk" aria-hidden="true")
+					a(href="https://twitter.com/MastervisionEzo" target="_blank")
+						i(class="fa fa-twitter" aria-hidden="true")
+					a(href="https://www.instagram.com/mastervision1/" target="_blank")
+						i(class="fa fa-instagram" aria-hidden="true")
+					a(href="https://www.ok.ru/group/54472921710656" target="_blank")
+						i(class="fa fa-odnoklassniki" aria-hidden="true")
+					a(href="https://www.youtube.com/channel/UCiJTdt19jRMRmYyCZac2Lvg/" target="_blank")
+						i(class="fa fa-youtube" aria-hidden="true")
+					.clfix
+				p ИП Кудряшов Александр Анатольевич, Тюмень, проезд Летний, 9а, ИНН 720410077658, ОГРН 315723200065100
+		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 		<!-- AutoWebOffice: UTM or OpenStat Counter -->
 		script(type="text/javascript")
 			| var url = "https://aleksandrkudryashov1.autoweboffice.ru/?r=api/utmopenstat";

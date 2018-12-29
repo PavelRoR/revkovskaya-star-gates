@@ -1,0 +1,278 @@
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro.eot');
+	src: url('../fonts/Intro.eot') format('embedded-opentype'),
+		 url('../fonts/Intro.woff2') format('woff2'),
+		 url('../fonts/Intro.woff') format('woff'),
+		 url('../fonts/Intro.ttf') format('truetype'),
+		 url('../fonts/Intro.svg#Intro') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IntroBlack';
+	src: url('../fonts/IntroBlack.eot');
+	src: url('../fonts/IntroBlack.eot') format('embedded-opentype'),
+		 url('../fonts/IntroBlack.woff2') format('woff2'),
+		 url('../fonts/IntroBlack.woff') format('woff'),
+		 url('../fonts/IntroBlack.ttf') format('truetype'),
+		 url('../fonts/IntroBlack.svg#IntroBlack') format('svg');
+	font-display: fallback;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IntroBoldAlt';
+	src: url('../fonts/IntroBoldAlt.eot');
+	src: url('../fonts/IntroBoldAlt.eot') format('embedded-opentype'),
+		 url('../fonts/IntroBoldAlt.woff2') format('woff2'),
+		 url('../fonts/IntroBoldAlt.woff') format('woff'),
+		 url('../fonts/IntroBoldAlt.ttf') format('truetype'),
+		 url('../fonts/IntroBoldAlt.svg#IntroBoldAlt') format('svg');
+	font-display: fallback;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu.eot');
+	src: url('../fonts/Ubuntu.eot') format('embedded-opentype'),
+		 url('../fonts/Ubuntu.woff2') format('woff2'),
+		 url('../fonts/Ubuntu.woff') format('woff'),
+		 url('../fonts/Ubuntu.ttf') format('truetype'),
+		 url('../fonts/Ubuntu.svg#Ubuntu') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UbuntuBold';
+	src: url('../fonts/UbuntuBold.eot');
+	src: url('../fonts/UbuntuBold.eot') format('embedded-opentype'),
+		 url('../fonts/UbuntuBold.woff2') format('woff2'),
+		 url('../fonts/UbuntuBold.woff') format('woff'),
+		 url('../fonts/UbuntuBold.ttf') format('truetype'),
+		 url('../fonts/UbuntuBold.svg#UbuntuBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UbuntuLight';
+	src: url('../fonts/UbuntuLight.eot');
+	src: url('../fonts/UbuntuLight.eot') format('embedded-opentype'),
+		 url('../fonts/UbuntuLight.woff2') format('woff2'),
+		 url('../fonts/UbuntuLight.woff') format('woff'),
+		 url('../fonts/UbuntuLight.ttf') format('truetype'),
+		 url('../fonts/UbuntuLight.svg#UbuntuLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	background-color #fff
+	font-family: 'Ubuntu',sans-serif
+	font-size: 18px
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+.video_wrapper
+	margin 0 auto
+	position relative
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #fff
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+#main
+	width 100%
+	background-color: #369ECB
+	background-image url(../img/main_bg.jpg)
+	background-repeat no-repeat
+	background-position:  center
+	background-size: cover
+	box-shadow: 0 0 65px 12px rgba(247,246,245,0.17) inset
+	text-align: center
+	padding-bottom: 60px
+#header
+	position relative
+	z-index: 11
+	padding 14px 0
+	margin-bottom: 52px
+#logo
+	width 260px
+	margin-top: 12px
+	float left
+.contacts
+	float: right
+	text-align: right
+	display: table
+.contact_cell
+	display: table-cell
+	vertical-align: middle
+	a
+		display block
+		font-size: 16px;
+		font-family: "Ubuntu";
+		color: rgb(255, 255, 255);
+		line-height: 22px;
+		letter-spacing: 1.1px;
+		&:focus
+			color: rgb(255, 255, 255);
+			text-decoration: none
+		&:hover
+			color: rgb(255, 255, 255);
+			text-decoration: underline
+.contact_cell_no_tels
+	padding-left: 36px
+.contact_cell_tels
+	padding-left: 58px
+	background-image url(../img/tel_icon.png)
+	background-repeat no-repeat
+	background-position: 1px center
+	padding-right: 40px
+.contact_cell_no_tels
+	background-image url(../img/mail_icon.png), url(../img/skype_icon.png)
+	background-repeat no-repeat, no-repeat
+	background-position: 1px top, 27px bottom
+.pre
+	font-size: 24px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+.main_title
+	font-size: 42px;
+	font-family: "Intro", sans-serif;
+	color: rgb(181, 226, 251);
+	line-height: 1.2;
+	margin 5px 0 20px
+.man_subtitle
+	font-size: 22px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(255, 233, 46);
+	line-height: 1.2;
+	text-shadow: 0px 4px 22.32px rgba(1, 51, 76, 0.29);
+	span
+		display block
+		font-size: 20px
+		color rgb(255,255,255)
+.aut_n_date
+	border-radius: 5px
+	border 2px solid rgb(255, 255, 255);
+	background-color: rgb(1, 71, 107);
+	box-shadow: 0px 12px 15.66px 2.34px rgba(0, 0, 0, 0.35);
+	width 100%
+	max-width: 300px;
+	padding 15px
+	text-align: center
+	margin 0 auto
+.aut_n_date_text
+	font-size: 20px;
+	font-family: "IntroBoldAlt", sans-serif;
+	color: rgb(253, 165, 33);
+	line-height: 1.35;
+	&:first-child
+		margin-bottom: 8px
+	span
+		display block
+		font-size: 18px;
+		font-family: "Ubuntu";
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+.main_video_wrapper
+	margin 30px auto 0
+	max-width 560px
+	box-shadow: 0 3px 5px rgba(0,0,0,.5)
+#feedback
+	width 100%
+	padding 60px 0
+	min-height calc(100vh - 760px)
+.feedback_title
+	font-size: 30px;
+	font-family: "Ubuntu";
+	color: rgb(20, 61, 80);
+	line-height: 1.2;
+	text-align: center;
+	margin-bottom: 40px
+#vk
+#fb
+	background-color #fff
+	border-radius: 10px
+	box-shadow: 0px 3px 5px  rgba(0, 0, 0, 0.15);
+#footer
+	width 100%
+	padding 28px 0 24px
+	background-color: rgb(9, 71, 114);
+	box-shadow: 0px 3px 33.6px 1.4px rgba(0, 0, 0, 0.13);
+	text-align: center
+	h5
+		font-size: 24px;
+		color: #fff
+		line-height: 1.042;
+		margin 0
+		font-family: 'IntroBoldAlt'
+	p
+		font-size: 14px;
+		font-family: "UbuntuLight",sans-serif;
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		text-align: center;
+.soc_buttons
+	width 100%
+	margin: 0 auto
+	a
+		display: inline-block
+		margin: 20px 10px
+		position relative
+		width: 32px;
+		height 32px
+		line-height 32px
+		background-color: #fda521
+		border-radius: 50%
+		font-size 18px
+		.fa
+			color rgb(9, 71, 114);
+		&:hover
+			background-color: rgb(9, 71, 114);
+			box-shadow: 0 0 0 1px #fda521 inset
+			.fa
+				color #fda521
