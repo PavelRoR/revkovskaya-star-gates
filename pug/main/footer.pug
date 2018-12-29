@@ -10,7 +10,7 @@ footer#footer
 				.modal-body
 					form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form_newsletter.form_newsletter_mail_section.modal_form
 						h3.mail_section_title.modal_mail_section_title Спешите записаться и получить бонус!
-						h4.mail_subtitle.modal_mail_subtitle Как прожить трудный период  в 2019 без проблем, потерь и трудностей
+						h4.mail_subtitle.modal_mail_subtitle.hide Как прожить трудный период  в 2019 без проблем, потерь и трудностей
 						.form_container.form_container_modal
 							.email-block
 								input( type="hidden" value="1" name="required_fields[email]")
@@ -29,6 +29,7 @@ footer#footer
 							label(for="check_m").check_label Я согласен с 
 								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
 								|  по 152 - Ф3
+					.clearfix
 .modal.fade(tabindex="-1" role="dialog")#myPolitics
 	.modal-dialog(role="document")
 		.modal-content.politics_modal-content
