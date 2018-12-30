@@ -159,6 +159,8 @@
 		width 100%
 		max-width 300px
 		margin 0 auto 35px
+		img
+			width 100%
 	.plan_day
 		max-width 330px
 		height auto
@@ -183,12 +185,13 @@
 		padding 10px
 	#text_revs
 		padding-bottom: 50px
-	.controls
-		width: 100%
-		overflow: hidden
 	.carousel-control
 		top auto
 		bottom 10px
+	.carousel-control.left
+		left 15px
+	.carousel-control.right
+		right 15px
 @media screen and (max-width 485px)
 	.contact_cell
 		display block
@@ -241,3 +244,49 @@
 		font-size: 12px
 	.modal-dialog
 		max-width 96%
+	.mail_section_subtitle
+		padding-left: 0
+		&:before
+			display: inline-block
+			position: static
+			margin-right: 10px
+	.button_partners
+		margin-top: 30px
+	#text_revs
+		padding 15px 15px 50px
+@media screen and (max-width 380px)
+	body
+		font-size: 16px
+	#logo
+		width 160px
+	.main_title
+		font-size: 24px
+		margin-bottom: 10px
+	.aut_n_date
+		padding 10px
+	.main_video_wrapper
+		margin-top: 20px
+	.author_title, .gives_title, .happens_title, .plan_title, .revs_title, .what_title
+		font-size: 22px
+		margin-bottom: 20px
+	.plan_day_list li
+		padding-left: 25px
+		margin-bottom: 10px
+	.happens_list li
+		margin-bottom: 10px
+		line-height: 1.4
+		&:before
+			margin-right: 5px
+	.gives_aftertitle
+		font-size: 18px
+	.about_list li
+		padding-left: 20px
+		margin-bottom: 10px
+	#text_revs .rev_img
+		height 70px
+	.single_give_text
+		display block
+		padding-top: 80px
+		padding-left: 0
+		background-position: center top
+		text-align: center
