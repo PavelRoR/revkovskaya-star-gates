@@ -83,6 +83,30 @@ body
 	background-color #fff
 	font-family: 'Ubuntu',sans-serif
 	font-size: 18px
+@-webkit-keyframes autofill {
+	to {
+		color: #fff;
+		background: transparent;
+	}
+}
+
+.mail:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+
+input::-webkit-input-placeholder 
+	color: #fff;
+	opacity:1
+input::-moz-placeholder          
+	color: #fff;
+	opacity:1
+input:-moz-placeholder           
+	color: #fff;
+	opacity:1
+input:-ms-input-placeholder      
+	color: #fff;
+	opacity:1
 a
 	color: #fefefe
 	&:focus
