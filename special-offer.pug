@@ -1,18 +1,17 @@
+-var offer = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2632&clean=true&lg=ru ';
+
 <!DOCTYPE html>
 html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		meta(property="og:type" content="website")
-		meta(property="og:url" content="https://revkovskaya.mastervision.su/star-gates/")
-		meta(property="og:title" content="«Звездные врата»")
-		meta(property="og:description" content="Бесплатный 2-хдневный интенсив Ольги Ревковской")
-		meta(property="og:image" content="https://revkovskaya.mastervision.su/star-gates/img/banner_img.jpg")
-		title Бесплатный 2-хдневный интенсив Ольги Ревковской «Звездные врата»
-		link(rel="icon" type="image/x-icon" href="favicon.ico")
-		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		link(rel="stylesheet" href="css/styles.css")
+		meta(property="og:title" content="Специальное предложение")
+		meta(property="og:description" content="от Ольги Ревковской")
+		title Специальное предложение от Ольги Ревковской
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
+		link(rel="stylesheet" href="../css/bonus_styles.css")
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 		noscript
@@ -27,7 +26,7 @@ html(lang="ru")
 		noscript
 			img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2406475009380573&ev=PageView&noscript=1")
 		<!-- End Facebook Pixel Code -->
-	body
+	body#special_offer
 		<!-- Yandex.Metrika counter -->
 		script(type="text/javascript")
 			| (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35450015 = new Ya.Metrika({ id:35450015, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
@@ -35,19 +34,12 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		include pug/main/main
-		include pug/main/what
-		include pug/main/happ
-		include pug/main/plan
-		include pug/main/give
-		include pug/main/author
-		include pug/main/revs
-		include pug/main/footer
-		include pug/main/scripts
-		<!--BEGIN JIVOSITE CODE-->
-		script
-			| (function() {var widget_id = 'Ls8e0RDaYF';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
-		<!--END JIVOSITE CODE-->
+		include pug/spof/main
+		include pug/spof/for
+		include pug/spof/get
+		include pug/spof/last
+		include pug/spof/footer
+
 		<!-- AutoWebOffice: UTM or OpenStat Counter -->
 		script(type="text/javascript")
 			| var url = "https://aleksandrkudryashov1.autoweboffice.ru/?r=api/utmopenstat";
