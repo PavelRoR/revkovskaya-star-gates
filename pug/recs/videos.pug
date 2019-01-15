@@ -1,0 +1,35 @@
+section#videos
+	.container
+		h3.general_title.general_title_videos Записи и домашние задания 
+			span интенсива
+		#videos_tabs
+			ul.videos_links
+				li
+					a(href="#day_1") День 1
+				li
+					a(href="#day_2") День 2
+			.videos_day#day_1
+				h4.video_title День 1
+				.video_wrapper.videos_video_wrapper
+					iframe(src="https://youtube.com/embed/C3C_W2T5hjQ?rel=0&autoplay=0" allowfullscreen)
+				p.videos_text Занятие состоится 30.01.19, в 19:00 мск
+				p.videos_text Запись занятия появится здесь 31.02.19, после 13:00 мск
+			.videos_day#day_2
+				h4.video_title День 2
+				p.videos_text Занятие состоится 31.01.19, в 19:00 мск
+				p.videos_text Запись занятия появится здесь 01.02.19, после 13:00 мск
+		p.buy_recs_text Купить записи интенсива за 499р.
+		a.button.buy_recs_button(href="https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2596&clean=true&lg=ru" target="_blank") Купить
+section#feedback
+	.container
+		h3.general_title.general_title_feedback Ваши ответы и вопросы к Ольге пишите 
+			span в формах ниже:
+		.row
+			.col-md-6.col-sm-6
+				#vk
+					#vk_comments
+					script(type="text/javascript")
+						| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+			.col-md-6.col-sm-6
+				#fb
+					.fb-comments(data-href="https://revkovskaya.mastervision.su/star-gates/records/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
